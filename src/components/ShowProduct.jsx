@@ -11,7 +11,7 @@ function ShowProduct({ home = false }) {
 
   const fetchProduct = async () => {
     const response = await fetch(
-      `https://ecommerce-58o9.onrender.com/api/v3.2/product/all?page=${page}&perpage=16`,
+      `https://ecommerce-58o9.onrender.com/api/v3.2/product/all?page=${page}&perpage=16`
     );
     const data = await response.json();
     setTotalPage(data.page);
